@@ -1,6 +1,6 @@
 const Koa = require('koa');
 const app = new Koa();
-const debug = require('debug')('App');
+const debug = require('debug')('App:');
 const config = require('config');
 const morgan = require('koa-morgan');
 const bodyParser = require('koa-bodyparser');

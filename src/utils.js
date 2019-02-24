@@ -1,3 +1,5 @@
+var crypto = require("crypto");
+
 exports.getApiFiles = path => {
   const fs = require('fs');
 
@@ -10,4 +12,11 @@ exports.getApiFiles = path => {
     })
 
   return result
+}
+
+exports.sha1= str => {
+  var md5sum = crypto.createHash("sha1");
+  md5sum.update(str);
+  str = md5sum.digest("hex");
+  return str;
 }
