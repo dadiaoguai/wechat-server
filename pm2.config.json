@@ -1,0 +1,17 @@
+{
+  "apps" : [{
+    "name"        : "wechat-apis",  // 项目名
+    "script"      : "./app.js",
+    "watch": true,
+    "ignore_watch": ["node_modules"],
+//    "log_date_format": "“YYYY-MM-DD HH:mm:ss",
+//    "out_file": "./logs/common.log",
+//    "error_file": "./logs/error.log",
+    "env": {
+      "NODE_ENV": "dev"
+    },
+    "env_production": {
+      "NODE_ENV": "production"
+    }
+  }]
+}
